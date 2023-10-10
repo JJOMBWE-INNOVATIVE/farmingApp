@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import com.example.farmingapp.Fragments.HomeFragment
 import com.example.farmingapp.R
 import com.example.farmingapp.ViewModels.PurchaseListViewModelFactory
@@ -45,12 +46,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val navController = Navigation.findNavController(this, R.id.fragmentContainerView)
-//        val homeFragment = HomeFragment(navController)
-//
-//        val transaction = supportFragmentManager.beginTransaction()
-//        transaction.add(R.id.fragmentContainerView, homeFragment)
-//        transaction.commit()
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+
 
 
     }

@@ -1,5 +1,6 @@
 package com.example.farmingapp.Activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,7 @@ import com.example.farmingapp.databinding.ActivityLoginBinding
 class LoginActivity : AppCompatActivity() {
     lateinit var databaseHelper: DatabaseHelper
     lateinit var binding:ActivityLoginBinding
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

@@ -53,17 +53,34 @@
 
                 </LinearLayout>
 
-
-                <androidx.recyclerview.widget.RecyclerView
-
-                    android:id="@+id/animalsRv"
-                    android:layout_width="345dp"
-                    android:layout_height="190dp"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="327dp"
+                    android:layout_height="219dp"
+                    android:layout_marginTop="15dp"
+                    app:cardElevation="3dp"
                     app:layout_constraintBottom_toTopOf="@id/list_linear"
-                    android:background="@color/blue"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/header" />
+                    app:layout_constraintTop_toBottomOf="@+id/header">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/animalsRv"
+                        android:layout_width="327dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toTopOf="@id/list_linear"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/header"
+
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+ />
 
                 <LinearLayout
                     android:id="@+id/list_linear"
@@ -74,8 +91,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/animalsRv"
-                    app:layout_goneMarginTop="0dp">
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cv"
+                    >
 
                     <Button
                         android:id="@+id/AnimL"
@@ -134,6 +152,8 @@
                         tools:ignore="UnknownId" />
 
                 </LinearLayout>
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

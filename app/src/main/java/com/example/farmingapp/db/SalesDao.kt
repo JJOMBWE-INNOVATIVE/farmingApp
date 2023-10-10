@@ -14,6 +14,8 @@ import com.example.farmingapp.ApiData.SalesData
 interface SalesDao {
 
     @Insert
+
+
    suspend fun insertNewSale(salesData: SalesData)
 
    @Delete

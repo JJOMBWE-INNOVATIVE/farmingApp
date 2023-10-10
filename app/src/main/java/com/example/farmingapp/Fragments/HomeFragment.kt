@@ -106,9 +106,6 @@ class HomeFragment() : Fragment() {
         animalRecyclerview()
         homeViewModel.getAllAnimal()
         observeAnimalsLivedata()
-
-
-
     }
 
     private fun animalRecyclerview() {

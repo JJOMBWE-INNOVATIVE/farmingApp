@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/introductionFragment">
+    app:startDestination="@id/registerFragment">
 
     <fragment
         android:id="@+id/registeredWorkersFragment"
@@ -65,10 +65,23 @@
         android:label="WorkersFragment"
         tools:layout="@layout/fragment_workers"/>
     <fragment
-        android:id="@+id/introductionFragment"
-        android:name="com.example.farmingapp.Fragments.IntroductionFragment"
-        android:label="fragment_introduction"
-        tools:layout="@layout/fragment_introduction" />
+        android:id="@+id/registerFragment"
+        android:name="com.example.farmingapp.Fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.farmingapp.Fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
 
 </navigation>
