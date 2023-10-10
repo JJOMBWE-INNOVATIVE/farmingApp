@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introductionFragment">
+
+    <fragment
+        android:id="@+id/registeredWorkersFragment"
+        android:name="com.example.farmingapp.Fragments.RegisteredWorkersFragment"
+        android:label="fragment_registered_workers"
+        tools:layout="@layout/fragment_registered_workers" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.farmingapp.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_animalsSearchFragment"
+            app:destination="@id/animalsSearchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_animalListFragment"
+            app:destination="@id/animalListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_registeredWorkersFragment"
+            app:destination="@id/registeredWorkersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_purchasedItemsListFragment"
+            app:destination="@id/purchasedItemsListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_salesListFragment"
+            app:destination="@id/salesListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workersFragment"
+            app:destination="@id/workersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalListFragment"
+        android:name="com.example.farmingapp.Fragments.AnimalListFragment"
+        android:label="fragment_animal_list"
+        tools:layout="@layout/fragment_animal_list" >
+        <action
+            android:id="@+id/action_animalListFragment_to_animalsSearchFragment"
+            app:destination="@id/animalsSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalsSearchFragment"
+        android:name="com.example.farmingapp.Fragments.AnimalsSearchFragment"
+        android:label="fragment_animals"
+        tools:layout="@layout/fragment_search_animals" />
+    <fragment
+        android:id="@+id/salesListFragment"
+        android:name="com.example.farmingapp.Fragments.SalesListFragment"
+        android:label="SalesListFragment"
+        tools:layout="@layout/fragment_sales_list"/>
+    <fragment
+        android:id="@+id/purchasedItemsListFragment"
+        android:name="com.example.farmingapp.Fragments.PurchasedItemsListFragment"
+        android:label="PurchasedItemsListFragment"
+        tools:layout="@layout/fragment_purchased_items_list"/>
+    <fragment
+        android:id="@+id/workersFragment"
+        android:name="com.example.farmingapp.Fragments.WorkersFragment"
+        android:label="WorkersFragment"
+        tools:layout="@layout/fragment_workers"/>
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.farmingapp.Fragments.IntroductionFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" />
+
+
+</navigation>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.NewPurchaseActivity">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/plinear"
+            android:layout_width="match_parent"
+            android:layout_height="483dp"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anim_imageDetails"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/AA"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Animal Age"
+
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Animal Availability"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue"
+                android:hint="Breed"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Animal Color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AG"
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="50dp"
+                android:hint="Animal gender"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Animal ID"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AN"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue"
+                android:hint="Animal Name"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/TN"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Tag number"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/T"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Type"
+                android:background="@color/blue"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/AW"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Weight"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/SB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+               android:text="Save"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

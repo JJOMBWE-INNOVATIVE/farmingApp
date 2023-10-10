@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.NewPurchaseActivity">
+
+
+    <!-- Optional Empty View (Visible when the list is empty) -->
+
+
+    <ImageView
+        android:id="@+id/anim_imageDetails"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_background" />
+
+    <LinearLayout
+        android:id="@+id/plinear"
+        android:layout_width="371dp"
+        android:layout_height="483dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_imageDetails"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/AA"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal Age"
+            android:background="@color/blue"
+
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AV"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal Availability"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AB"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Breed"
+            android:background="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AC"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal Color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AG"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal gender"
+            android:background="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AID"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal ID"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AN"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Animal Name"
+            android:background="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TN"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Tag number"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/T"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Type"
+            android:background="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AW"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Weight"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

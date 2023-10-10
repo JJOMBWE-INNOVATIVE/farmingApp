@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.NewPurchaseActivity">
+
+
+    <!-- Optional Empty View (Visible when the list is empty) -->
+
+
+    <TextView
+        android:id="@+id/sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Purchased Products"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/plinear"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/plinear"
+        android:layout_width="389dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/purchase_save_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sales"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp">
+
+        <EditText
+            android:id="@+id/pId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue"
+            android:hint="ProductId"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pP"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Product Price"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pN"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Product Name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pDescr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Product Description"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue"
+
+            android:hint="Purchase Date"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pQnty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Quantity"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pFrom"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="60dp"
+            android:hint="Purchased From"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/purchase_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/submit_information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plinear" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

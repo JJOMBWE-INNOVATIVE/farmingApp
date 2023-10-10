@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- sales_item_layout.xml -->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sales Id"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/sAId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Animal Id"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/sP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/sQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/sPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sold By"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/pSoldTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sold to"
+                android:minHeight="60dp" />
+
+            <TextView
+                android:id="@+id/sDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selling date"
+                android:minHeight="48dp" />
+
+            <!-- Add other TextViews for other fields here -->
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
