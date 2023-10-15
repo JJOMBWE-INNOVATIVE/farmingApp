@@ -1,12 +1,10 @@
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.farmingapp.ApiData.ResponseX
 import com.example.farmingapp.ApiData.SalesData
-import com.example.farmingapp.databinding.DpRegesteredWorkersBinding
 import com.example.farmingapp.databinding.NewSalesBinding
 
-class SalesAdapter(private var salesData: List<SalesData>) :
+class SalesAdapter(private var salesData: SalesData) :
     RecyclerView.Adapter<SalesAdapter.SalesAdapterViewHolder>() {
 
     private var sales = ArrayList<SalesData>()

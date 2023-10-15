@@ -22,8 +22,8 @@
         android:id="@+id/new_anim_save_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green"
         android:layout_marginTop="48dp"
+        android:backgroundTint="@color/green"
         android:text="Submit Sales"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +33,8 @@
 
     <LinearLayout
         android:id="@+id/na_linearLayout"
-        android:layout_width="396dp"
-        android:layout_height="408dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,21 +45,27 @@
         tools:layout_editor_absoluteY="89dp">
 
         <EditText
-            android:id="@+id/naId"
-            android:background="@color/blue"
+            android:id="@+id/natype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="50dp"
-            android:hint="ID"
-             />
+            android:background="@color/blue"
+            android:hint="type"
+            android:minHeight="50dp" />
 
         <EditText
-            android:id="@+id/nAId"
+            android:id="@+id/naimage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="50dp"
-            android:hint="Animal Id"
-             />
+            android:background="@color/blue"
+            android:hint="image"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/nan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Animal Name"
+            android:minHeight="50dp" />
 
         <EditText
             android:id="@+id/new_anim_price"
@@ -71,6 +77,14 @@
              />
 
         <EditText
+            android:id="@+id/nAB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:hint="Breed"
+            android:minHeight="50dp" />
+
+        <EditText
             android:id="@+id/naQ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,30 +93,49 @@
              />
 
         <EditText
-            android:id="@+id/buyingPerson"
+            android:id="@+id/naTaG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="tag"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/nage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue"
-            android:minHeight="50dp"
-            android:hint="Bought by"
-             />
+            android:hint="Age"
+            android:minHeight="50dp" />
 
         <EditText
-            android:id="@+id/naOwned"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="50dp"
-            android:hint="Bought From"
-             />
-
-        <EditText
-            android:id="@+id/naBuyingDate"
+            android:id="@+id/naGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue"
-            android:minHeight="50dp"
-            android:hint="Buying date"
-             />
+            android:hint="Gender"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/nac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="color"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/naw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/naa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:hint="Available"
+            android:minHeight="48dp" />
 
         <!-- Add other TextViews for other fields here -->
 

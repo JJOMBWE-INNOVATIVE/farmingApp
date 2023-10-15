@@ -8,22 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.farmingapp.Activities.NewAnimalActivity
 import com.example.farmingapp.Activities.NewPurchaseActivity
 import com.example.farmingapp.Activities.NewSalesActivity
 import com.example.farmingapp.Activities.NewWorkerActivity
-import com.example.farmingapp.ApiData.AnimalList
 import com.example.farmingapp.R
 import com.example.farmingapp.ViewModels.HomeViewModel
 import com.example.farmingapp.databinding.FragmentHomeBinding
-import com.example.farmingapp.retrofit.RetrofitInstance
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
 
 class HomeFragment() : Fragment() {
 

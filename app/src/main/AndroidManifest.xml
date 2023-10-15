@@ -16,9 +16,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.IntroductionActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activities.LoginActivity"
             android:exported="false" />
         <activity

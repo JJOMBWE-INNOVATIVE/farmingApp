@@ -14,3 +14,4 @@ data class SalesData(
     val sold_by: String?,
     val sold_to: String?
 )
+data class SalesDataList(val salesDataList: List<SalesData>)
